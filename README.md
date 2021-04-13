@@ -6,7 +6,9 @@ Scripts of varying utility for the [Adafruit Neo Trinkey](https://www.adafruit.c
 
 Copy scripts in the root level as 'code.py' on the device.
 
-
+flashlight.py
+- T1: Change LED color or show an animated rainbow.
+- T2: Change LED brightness or turn off.
 
 
 
