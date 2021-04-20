@@ -10,5 +10,6 @@ flashlight.py
 - T1: Change LED color or show an animated rainbow.
 - T2: Change LED brightness or turn off.
 
-
-
+serial_control.py
+ - Control LEDs via the serial interface. See comments in the script for details.
+ - Use the serial_control_host.py script for a command line interface to the Neo trinkey LEDs
