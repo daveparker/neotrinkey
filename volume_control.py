@@ -24,6 +24,7 @@ NUM_PIXELS = 4
 INTENSITY = 0.1
 BLINK_DURATION = 50
 
+
 def time_msec():
     return int(time.monotonic() * 1000)
 
@@ -95,18 +96,22 @@ class LEDBlink(Task):
 
 
 def click(button, num_clicks):
-    if num_clicks == 2:
+
+    if button == button1 and num_clicks == 1:
+        cc.send(ConsumerControlCode.VOLUME_INCREMENT)
+        led.blink(color.RED, BLINK_DURATION)
+
+    elif button == button1 and num_clicks == 2:
+        cc.send(ConsumerControlCode.PLAY_PAUSE)
+        led.blink(color.WHITE, BLINK_DURATION)
+
+    elif button == button2 and num_clicks == 1:
+        cc.send(ConsumerControlCode.VOLUME_DECREMENT)
+        led.blink(color.GREEN, BLINK_DURATION)
+
+    elif button == button2 and num_clicks == 2:
         cc.send(ConsumerControlCode.MUTE)
-
         led.blink(color.BLUE, BLINK_DURATION)
-    elif num_clicks == 1:
-        if button == button1:
-            cc.send(ConsumerControlCode.VOLUME_INCREMENT)
-            led.blink(color.RED, BLINK_DURATION)
-
-        else: #button2
-            cc.send(ConsumerControlCode.VOLUME_DECREMENT)
-            led.blink(color.GREEN, BLINK_DURATION)
 
 
 touch1 = touchio.TouchIn(board.TOUCH1)
