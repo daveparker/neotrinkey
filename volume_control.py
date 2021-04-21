@@ -1,6 +1,6 @@
 # Use Neo Trinkey (https://www.adafruit.com/product/4870) as a volume control.
 # Touch 1 - Tap once to increase volume. Tap twice to play/pause.
-# Touch 2 - Tap once to decrease volume. tap twice to mute/unmute.
+# Touch 2 - Tap once to decrease volume. Tap twice to mute/unmute.
 #
 # Copy volume_control.py to the Neo Trinkey as code.py
 

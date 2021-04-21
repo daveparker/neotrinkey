@@ -13,3 +13,12 @@ flashlight.py
 serial_control.py
  - Control LEDs via the serial interface. See comments in the script for details.
  - Use the serial_control_host.py script for a command line interface to the Neo trinkey LEDs
+
+volume_control.py
+ - T1: Tap once to increase volume. Tap twice to play/pause.
+ - T2: Tap once to decrease volume. Tap twice to mute/unmute.
+
+stackoverflow_helper.py
+ - T1: Tap once to copy. Tap twice to cut.
+ - T2: Tap once to paste. Tap twice to swich between Mac/Windows
+
